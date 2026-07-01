@@ -1,6 +1,6 @@
 [project]
 name = "release-mcp-atlassian"
-version = "0.0.1+release.1"
+version = "0.0.1+release.2"
 description = "MCP Atlassian (empaquetado release/, instalable via uvx)"
 requires-python = ">=3.10"
 dependencies = [

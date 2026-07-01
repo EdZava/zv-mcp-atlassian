@@ -2,7 +2,7 @@ type = "python"
 
 [release]
 base_version = "0.0.1"
-release_suffix = "release.1"
+release_suffix = "release.2"
 github_repo = "EdZava/zv-mcp-atlassian"
 
 [python]
