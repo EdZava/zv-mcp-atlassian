@@ -1,7 +1,7 @@
 [project]
-name = "edzava-mcp-atlassian"
-version = "0.0.1+edzava.1"
-description = "MCP Atlassian (fork EdZava, instalable desde release/)"
+name = "release-mcp-atlassian"
+version = "0.0.1+release.1"
+description = "MCP Atlassian (empaquetado release/, instalable via uvx)"
 requires-python = ">=3.10"
 dependencies = [
   "atlassian-python-api>=4.0.0",

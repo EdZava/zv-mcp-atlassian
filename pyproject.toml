@@ -45,6 +45,7 @@ mcp-atlassian = "mcp_atlassian:main"
 
 [dependency-groups]
 dev = [
+    "zv-mcp-release-toolkit @ git+ssh://git@github.com/EdZava/zv-mcp-release-toolkit.git@v0.2.0",
     "uv>=0.1.0",
     "pytest>=8.0.0",
     "pytest-cov>=4.1.0",

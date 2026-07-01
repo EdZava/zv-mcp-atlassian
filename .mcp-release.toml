@@ -1,0 +1,13 @@
+type = "python"
+
+[release]
+base_version = "0.0.1"
+release_suffix = "release.1"
+github_repo = "EdZava/zv-mcp-atlassian"
+
+[python]
+src_package_dir = "mcp_atlassian"
+description = "MCP Atlassian (empaquetado release/, instalable via uvx)"
+
+[python.scripts]
+mcp-atlassian = "mcp_atlassian:main"

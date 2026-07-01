@@ -5,7 +5,7 @@
 El consumidor (GestionG5) instala desde `release/` con tag fijado:
 
 ```text
-uvx --from git+https://github.com/EdZava/zv-mcp-atlassian.git@0.0.1-edzava.1?subdir=release
+uvx --from git+https://github.com/EdZava/zv-mcp-atlassian.git@0.0.1-release.1?subdir=release
 ```
 
 - `release/uv.lock` fija dependencias PyPI.
@@ -13,10 +13,13 @@ uvx --from git+https://github.com/EdZava/zv-mcp-atlassian.git@0.0.1-edzava.1?sub
 
 ## Regenerar release
 
+Configuracion en `.mcp-release.toml`; sincronizacion con [zv-mcp-release-toolkit](https://github.com/EdZava/zv-mcp-release-toolkit):
+
 ```bash
-python scripts/sync-python-release.py
-git add release/ scripts/sync-python-release.py
-git tag 0.0.1-edzava.2   # incrementar EDZAVA_RELEASE_SUFFIX en el script
+./scripts/sync-release.sh
+# o: uv run mcp-release-toolkit sync --config .mcp-release.toml
+git add release/ .mcp-release.toml
+git tag 0.0.1-release.2   # incrementar release_suffix en .mcp-release.toml
 git push origin main --tags
 ```
 
