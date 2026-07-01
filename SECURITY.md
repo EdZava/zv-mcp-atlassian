@@ -2,7 +2,7 @@
 
 ## Instalacion reproducible (release/)
 
-El consumidor (GestionG5) instala desde `release/` con tag fijado:
+Instalar desde `release/` con un **tag git fijado**:
 
 ```text
 uvx --from git+https://github.com/EdZava/zv-mcp-atlassian.git@0.0.1-release.1?subdir=release
@@ -25,4 +25,4 @@ git push origin main --tags
 
 ## Reporte
 
-Incidencias de seguridad: mantenedor del fork EdZava.
+Incidencias de seguridad: abrir un issue privado o contactar al mantenedor del repositorio.
